@@ -1,12 +1,52 @@
-## Making a plan
-1) Make a drawing of your app. Simple "wireframes"
-2) Once you have a drawing, name the HTML elements you'll need to realize your vision
-3) For each HTML element ask: Why do I need this?
-    - This is your pseudocode
-4) Once we know _why_ we need each element, think about how to implement the "Why" as a "How"
-5) Is there some state we need to initialize?
-6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
-7) Think about how to validate each of your steps
-8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
-9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
+HTML
+    -pages
+        1) portal: enter name
+            -input form
+        2) map page
+            -map image, radio button group
+        3) quest page (display controlled by JS)
+            -sections/divs: title, image, story text, radio buttons for choices
+        4) results page
+            -sections/divs: result type (overslept/woke up), image, result text
+            -play again button?
 
+CSS
+    1) map page - format map image and radio buttons/image
+    2) quest page - image, divs, radio buttons
+    3) results page - text, image
+    4) spruce up the portal if time
+
+JavaScript
+    1) initial states
+        -sleepy points - get to 100 and you wake up, get to 0 and you sleep all day
+        -sweet dreams - get more for good choices, fewer for bad
+        -name
+    2) functions
+        -findById
+        -increment/decrement:
+            -sleepy points
+            -sweet dreams
+        -take form data and convert to object
+        -function to get quest ID from URL?
+        1) portal page
+        2) map page
+            -use static data first 
+            -then loop through metadata to find matching titles to display as list elements
+        3) quest page
+        4) results page
+    3) forms
+        1) portal page
+            -input form: collect name
+            -button: store name in LS, take user to map page
+        2) map page
+            -radio buttons: take user to quest page
+        3) quest page
+            -radio buttons: what choice was made?
+                -quest is completed 
+                -increment/decrement:
+                    -sleepy points
+                    -sweet dreams
+                --> store all this info in LS
+                -if sleepy points <= 0 then take to bad results page
+                -if sleepy points >= 100 then take to good results page
+                -else redirect to map
