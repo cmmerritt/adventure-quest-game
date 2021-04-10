@@ -21,16 +21,21 @@
             <h2>
                 Help Pusheen wake up and enjoy another lazy day with her friends!
             </h2>
-            <label for="name">Your name:</label>
-            <input type="text" id="name" name="name">
-            <input type="submit" value="Submit">
+            <form id="signup">
+                <label for="name">Your name:</label>
+                <p class="text-prompt">
+                    <input type="text" id="input-name" name="name" required>
+                    <button>Submit</button>
+                </p>
+                
+            </form>
     
         </section>
     </main>
     <footer>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./portal/portal.js"></script>
 </body>
 
 </html>

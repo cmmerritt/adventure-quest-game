@@ -11,3 +11,15 @@ export function setToLocalStorage(parsedUserdata) {
     return localStorage.setItem(USERDATA, toString);
 }
 
+export function getUser() {
+    const userStored = localStorage.getItem('user');
+    if (!userStored) return null;
+    const user = JSON.parse(userStored);
+    return user;
+}
+
+export function saveUser(user) {
+    const userToString = JSON.stringify(user);
+    localStorage.setItem('user', userToString);
+}
+    
