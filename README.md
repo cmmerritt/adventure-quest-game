@@ -24,6 +24,7 @@ JavaScript
     2) functions
         -findById
         -increment/decrement:
+            when does this happen? --when you make a decision on the quests page (event listener)
             -sleepy points
             -sweet dreams
         -take form data and convert to object
