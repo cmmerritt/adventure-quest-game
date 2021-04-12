@@ -6,4 +6,3 @@ export function findById(array, id) {
         }
     }
 }
-
