@@ -1,0 +1,23 @@
+#map-quests {
+    position: relative;
+    background-image: url("../assets/pusheen-living-room.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: auto;
+}
+
+.quest {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quest.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.quest.completed:after {
+    content: ' ✔';
+}
