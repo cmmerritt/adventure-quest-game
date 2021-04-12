@@ -10,7 +10,7 @@ form.addEventListener('submit', (event) => {
 
     const user = {
         hp: 35,
-        gold: 0,
+        dreams: 0,
         name: name,
         completed: {}
     };
