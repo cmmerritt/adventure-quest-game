@@ -27,7 +27,7 @@ export function saveUser(user) {
     
 export function updateUserOnAction(questId, action) {
     const user = getUser();
-    user.hp += action.hp;
+    user.friendshipPoints += action.friendshipPoints;
 
     user.dreams += action.dreans;
 
@@ -48,7 +48,7 @@ export function didUserExhaustQuests() {
 
 export function getUserProfile() {
     const name = document.getElementById('name');
-    const hp = document.getElementById('hp');
+    const friendshipPoints = document.getElementById('friendship-points');
     const dreams = document.getElementById('dreams');
 
     const user = getUser();
@@ -60,18 +60,18 @@ export function getUserProfile() {
     name.textContent = user.name;
     dreams.textContent = user.dreams;
 
-    if (user.hp <= 0) {
-        hp.textContent = 'Pusheen is still asleep!';
+    if (user.friendshipPoints <= 0) {
+        friendshipPoints.textContent = 'Pusheen is still asleep!';
     }
     else {
-        hp.textContent = user.hp;
+        friendshipPoints.textContent = user.friendshipPoints;
     }
 }
 
 export function updateUser(questId, choice) {
     const user = getUser();
     user.completed[questId] = true;
-    user.hp += choice.hp;
+    user.friendshipPoints += choice.friendshipPoints;
     user.dreams += choice.dreams;
     saveUser(user);
 }

@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
     const name = data.get('name');
 
     const user = {
-        hp: 35,
+        friendshipPoints: 35,
         dreams: 0,
         name: name,
         completed: {}

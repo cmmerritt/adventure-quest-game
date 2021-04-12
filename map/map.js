@@ -3,9 +3,9 @@ import { getUser, didUserExhaustQuests } from '../local-storage-utils.js';
 
 const user = getUser();
 
-const userOutOfHp = user.hp <= 0;
+const userOutOfFP = user.friendshipPoints <= 0;
 
-if (didUserExhaustQuests() || userOutOfHp) {
+if (didUserExhaustQuests() || userOutOfFP) {
     window.location = '../results/index.html';
 }
 
