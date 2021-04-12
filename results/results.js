@@ -5,15 +5,15 @@
 import { getUser } from '../local-storage-utils.js';
 
 const DreamMessages = {
-    bad: 'nightmares stalk your sleeping hours',
-    neutral: 'you don\'t remember any of your dreams',
-    good: 'you have dreams that leave you happy when you wake up',
+    bad: 'nightmares stalk your sleeping hours.',
+    neutral: 'you don\'t remember any of your dreams.',
+    good: 'you have dreams that leave you happy when you wake up.',
 };
 
 const FPMessages = {
-    bad: 'you are a bad friend',
-    neutral: 'you aren\'t the best friend but I guess you aren\'t the worst',
-    good: 'you\'re the best friend a lazy cat could wish for'
+    bad: 'You are a bad friend. Pusheen sleeps the day away.',
+    neutral: 'Pusheen wakes up at 2 pm and misses out on some fun. You aren\'t the best friend but I guess you aren\'t the worst.',
+    good: 'Pusheen wakes up right on time after a solid 18 hours of sleep. You\'re the best friend a lazy cat could wish for.',
 };
 
 const section = document.querySelector('section');
@@ -25,7 +25,7 @@ const userDreamsText = DreamMessages[userDreams];
 const userFPText = FPMessages[userFP];
 
 const resultDescription = document.createElement('p');
-resultDescription.textContent = `${userDreamsText} and ${userFPText}`;
+resultDescription.textContent = `${userFPText} Tonight, ${userDreamsText}`;
 section.append(resultDescription);
 
 function calcEndDreams(user) {
