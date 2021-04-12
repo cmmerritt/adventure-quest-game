@@ -17,5 +17,5 @@ form.addEventListener('submit', (event) => {
 
     saveUser(user);
 
-    window.location = './map.html';
+    window.location = './map/index.html';
 }); 
