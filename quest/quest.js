@@ -12,11 +12,14 @@ if (!quest) {
     window.location = './map';
 }
 
-const image = document.createElement('image');
-image.src = `../assets/quests/${quest.image}`;
+const image = document.createElement('img');
+image.src = `../assets/${quest.image}`;
 
 const title = document.createElement('h2');
 title.textContent = quest.title;
+
+const description = document.createElement('span');
+description.textContent = quest.description;
 
 const form = document.createElement('form');
 
@@ -45,10 +48,12 @@ form.addEventListener('submit', (event) => {
     const choice = findById(quest.choices, choiceId);
     updateUser(questId, choice);
 
+    alert(choice.result);
+
     alert(JSON.stringify(getUser(), true, 2));
 
     window.location = '../map';
 });
 
 
-section.append(title, image, form);
+section.append(title, description, image, form);

@@ -68,16 +68,6 @@ export function getUserProfile() {
     }
 }
 
-export function questsCompleted() {
-    const user = getUser();
-    for (let quest of quests) {
-        if (!user.completed[quest.id]) {
-            return false;
-        }
-    }
-    return true;
-}
-
 export function updateUser(questId, choice) {
     const user = getUser();
     user.completed[questId] = true;
