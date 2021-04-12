@@ -1,12 +1,12 @@
 import quests from '../data-models.js';
-import { getUser, questsCompleted } from '../local-storage-utils.js';
+import { getUser, didUserExhaustQuests } from '../local-storage-utils.js';
 
 const user = getUser();
 
 const userOutOfHp = user.hp <= 0;
 
-if (questsCompleted() || userOutOfHp) {
-    window.location = '../results.html';
+if (didUserExhaustQuests() || userOutOfHp) {
+    window.location = '../results/index.html';
 }
 
 const section = document.querySelector('section');

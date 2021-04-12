@@ -22,9 +22,9 @@ const knock = {
     title: 'Knock on the Window',
     map: {
         top: '10%',
-        left: '20%%'
+        left: '20%'
     },
-    image: '.assets/pusheen-window.gif',
+    image: 'pusheen-window.gif',
     description: `
     Pusheen stirs but doesn't wake up. What now?
     `,
@@ -62,7 +62,7 @@ const doughnuts = {
         top: '17%',
         left: '37%'
     },
-    image: './assets/pusheen-sleep-doughnuts.gif',
+    image: 'pusheen-sleep-donuts.gif',
     description: `
     Pusheen's little nose twitches but she's still snoring. Hmmm, what else can you do?
     `,
@@ -95,20 +95,20 @@ const doughnuts = {
 
 const coffee = {
     id: 'coffee',
-    title: 'Fresh-Brewed Coffee',
+    title: 'Brew Fresh Coffee',
     map: {
         top: '31%',
         left: '5%'
     },
     // prerequisites: ['dragon', 'monsters'],
-    image: './assets/coffee.jpeg',
+    image: 'coffee.jpeg',
     description: `
         You brew your finest pot of pour-over. Pusheen's eyes flutter. Wonder how else we could nudge her awake?
     `,
     choices: [{
         id: 'talk',
         description: 'Talk to Pusheen about the fun day of laziness you\'ll enjoy together',
-        result: 'Pusheen smiles a little and rolls over',
+        result: 'Pusheen smiles a little and rolls over.',
         hp: 20,
         dreams: 30,
     }, {
