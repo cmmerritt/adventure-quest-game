@@ -34,7 +34,7 @@ const knock = {
         result: `
             That's not very nice! Pusheen doesn't wake up, but the neighbors complain.
         `,
-        hp: 0,
+        friendshipPoints: 0,
         dreams: -10,
     }, {
         id: 'throw-rock',
@@ -42,7 +42,7 @@ const knock = {
         result: `
             How rude! The window shatters but Pusheen is still fast asleep.
         `,
-        hp: -30,
+        friendshipPoints: -30,
         dreams: -20
     }, {
         id: 'sing-song',
@@ -50,7 +50,7 @@ const knock = {
         result: `
             In her dreams, Pusheen hears a far-off voice singing her favorite song. She smiles in her sleep.
         `,
-        hp: 30,
+        friendshipPoints: 30,
         dreams: 50
     }]
 };
@@ -72,7 +72,7 @@ const doughnuts = {
         result: `
             Pusheen mumbles to herself. Something about an earthquake. I don't think she liked that.
         `,
-        hp: -20,
+        friendshipPoints: -20,
         dreams: 0,
     }, {
         id: 'pizza',
@@ -80,7 +80,7 @@ const doughnuts = {
         result: `
            Pusheen smiles and drools in her sleep.
         `,
-        hp: 30,
+        friendshipPoints: 30,
         dreams: 30
     }, {
         id: 'taunt',
@@ -88,7 +88,7 @@ const doughnuts = {
         result: `
             Pusheen is crying in her sleep! What have you done?!
         `,
-        hp: -40,
+        friendshipPoints: -40,
         dreams: -40
     }]
 };
@@ -109,19 +109,19 @@ const coffee = {
         id: 'talk',
         description: 'Talk to Pusheen about the fun day of laziness you\'ll enjoy together',
         result: 'Pusheen smiles a little and rolls over.',
-        hp: 20,
+        friendshipPoints: 20,
         dreams: 30,
     }, {
         id: 'piano',
         description: 'Play the piano',
         result: 'You don\'t know how to play, but how hard can it be? Even if you do have paws and no fingers? Pretty hard.',
-        hp: -30,
+        friendshipPoints: -30,
         dreams: -40,
     }, {
         id: 'give-up',
         description: 'Give up. I don\'t think this bad cat will ever wake up!',
         result: 'You gave up on a day of laziness with your friend because it was just too much effort. Congratulations.',
-        hp: -50,
+        friendshipPoints: -50,
         dreams: -50,
     }]
 };

@@ -82,6 +82,10 @@ p {
     margin: var(--gutter);
 }
   
+img {
+    height: 300px;
+}
+
 footer {
     position: fixed;
     width: 100%;
