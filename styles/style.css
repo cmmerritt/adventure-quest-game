@@ -1,25 +1,50 @@
+@font-face {
+    font-family: 'sweet_creamyregular';
+    src: url('../assets/sweet_creamy-webfont.woff2') format('woff2'),
+         url('../assets/sweet_creamy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sweet_creamyitalic';
+    src: url('../assets/sweet_creamy_italic-webfont.woff2') format('woff2'),
+         url('../assets/sweet_creamy_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sweet_creamyitalic';
+    src: url('../assets/sweet_creamy_italic-webfont.woff2') format('woff2'),
+         url('../assets/sweet_creamy_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'purrfectregular';
+    src: url('../assets/purrfect-webfont.woff2') format('woff2'),
+         url('../assets/purrfect-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
+    /* CSS HSL */
+    --tea-green: hsla(98, 49%, 82%, 1);
+    --buff: hsla(48, 81%, 75%, 1);
+    --vivid-tangerine: hsla(8, 72%, 72%, 1);
+    --rhythm: hsla(238, 12%, 55%, 1);
+    --cadet-grey: hsla(206, 16%, 65%, 1);
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--tea-green);
 }
 
 main {
@@ -31,7 +56,6 @@ main {
 }
 
 section {
-    background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -43,14 +67,17 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buff);
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    font-family: 'purrfectregular';
+    font-size: 2em;
 }
 
 footer {
@@ -60,6 +87,10 @@ footer {
     box-shadow: var(--shadow);
 }
 
+form {
+    display: flex;
+    align-items: center;
+}
 
 h2 {
     font-size: 1.8rem;

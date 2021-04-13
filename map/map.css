@@ -1,3 +1,15 @@
+ * {
+    --tea-green: hsla(98, 49%, 82%, 1);
+    --buff: hsla(48, 81%, 75%, 1);
+    --vivid-tangerine: hsla(8, 72%, 72%, 1);
+    --rhythm: hsla(238, 12%, 55%, 1);
+    --cadet-grey: hsla(206, 16%, 65%, 1);
+ }   
+
+header {
+    font-family: 'purrfectregular';
+}
+
 #map-quests {
     position: relative;
     background-image: url("../assets/pusheen-living-room.png");
@@ -9,13 +21,15 @@
 
 .quest {
     position: absolute;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    color: rgb(5, 56, 9);
+    font-size: 1.5em;
+    font-family: 'sweet_creamyregular';
 }
 
 .quest.completed {
-    color: whitesmoke;
+    color: black;
     font-size: .9em;
+    font-family: 'sweet_creamyregular';
 }
 
 .quest.completed:after {
