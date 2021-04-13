@@ -22,7 +22,7 @@ const knock = {
     title: 'Knock on the Window',
     map: {
         top: '10%',
-        left: '20%'
+        left: '60%'
     },
     image: 'pusheen-window.gif',
     description: `
@@ -59,8 +59,8 @@ const doughnuts = {
     id: 'doughnuts',
     title: 'Bake Some Doughnuts',
     map: {
-        top: '17%',
-        left: '37%'
+        top: '75%',
+        left: '50%'
     },
     image: 'pusheen-sleep-donuts.gif',
     description: `
@@ -97,10 +97,9 @@ const coffee = {
     id: 'coffee',
     title: 'Brew Fresh Coffee',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '10%',
+        left: '1%'
     },
-    // prerequisites: ['dragon', 'monsters'],
     image: 'coffee.jpeg',
     description: `
         You brew your finest pot of pour-over. Pusheen's eyes flutter. Wonder how else we could nudge her awake?
